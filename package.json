@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/VonjareeW/Mployeetrkr/issues"
   },
-  "homepage": "https://github.com/VonjareeW/Mployeetrkr#readme"
+  "homepage": "https://github.com/VonjareeW/Mployeetrkr#readme",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "mysql2": "^3.6.2"
+  }
 }
