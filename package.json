@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/VonjareeW/Mployeetrkr#readme",
   "dependencies": {
+    "asciiart-logo": "^0.2.7",
     "inquirer": "^8.2.6",
+    "mysql": "^2.18.1",
     "mysql2": "^3.6.2"
   }
 }
