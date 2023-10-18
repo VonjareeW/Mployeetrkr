@@ -4,14 +4,16 @@ const logo = require("asciiart-logo");
 
 
 init();
-// Display logo text, load main prompts
+
+
+  // Display logo text, load main prompts
 function init() {
     const logoText = logo({ name: "MployeeTrkr aka Employee Tracker" }).render();
-  
+
     console.log(logoText);
-  
-    loadMainPrompts();
-  }
+
+    start(); 
+}
 
 
 
