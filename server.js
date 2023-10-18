@@ -15,8 +15,6 @@ function init() {
     start(); 
 }
 
-
-
 // create a MySQL connection
 const connection = mysql.createConnection({
     host: "localhost",
@@ -25,6 +23,8 @@ const connection = mysql.createConnection({
     password: "Camjaree77@",
     database: "employeeTracker_db",
 });
+
+
 
 // connect to the database
 connection.connect((err) => {
@@ -49,7 +49,6 @@ function start() {
                 "Add a department",
                 "Add a role",
                 "Add an employee",
-                "Add a Manager",
                 "Update an employee role",
                 "Exit",
             ],
@@ -133,17 +132,26 @@ function addDepartment() {
             message: "Input the name of the new department:",
         })
         .then((answer) => {
-            console.log(answer.name);
-            const query = `INSERT INTO departments (department_name) VALUES ("${answer.name}")`;
+            // Check if the department already exists
+            const query = `SELECT * FROM departments WHERE department_name = "${answer.name}"`;
             connection.query(query, (err, res) => {
                 if (err) throw err;
-                console.log(`Added department ${answer.name} to the database!`);
-                // reinitialize the application
-                start();
-                console.log(answer.name);
+                if (res.length > 0) {
+                    console.log(`Department ${answer.name} already exists.`);
+                    start(); // Reinitialize the application
+                } else {
+                    // If the department doesn't exist, add it to the database
+                    const insertQuery = `INSERT INTO departments (department_name) VALUES ("${answer.name}")`;
+                    connection.query(insertQuery, (err) => {
+                        if (err) throw err;
+                        console.log(`Added department ${answer.name} to the database!`);
+                        start(); // Reinitialize the application
+                    });
+                }
             });
         });
 }
+
 
 function addRole() {
     const query = "SELECT * FROM departments";
