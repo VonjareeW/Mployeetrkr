@@ -64,14 +64,19 @@ This project is licensed under the [MIT License](./LICENSE).
 <img width="1440" alt="Screenshot 2023-10-18 at 9 41 41 PM" src="https://github.com/VonjareeW/Mployeetrkr/assets/52430595/1975a510-42aa-428c-83a1-9c017cf28a9c">
 <img width="1440" alt="Screenshot 2023-10-18 at 9 42 10 PM" src="https://github.com/VonjareeW/Mployeetrkr/assets/52430595/85589855-bc8a-4bb3-8221-28bd777c3c53">
 
-
+## Repository
+[
+](https://github.com/VonjareeW/Mployeetrkr)
 
   ## Resources
 
   /Users/vonjareewilson/Desktop/2023-edx/UNCC-VIRT-FSF-PT-07-2023-U-LOLC/12-SQL
+  
 I used our class Ai edX program to grasp concepts and for guidance.
 
   ## Video link
 
+  [
+](https://watch.screencastify.com/v/rOfJqUqfuKnEZWttRrqm)https://watch.screencastify.com/v/rOfJqUqfuKnEZWttRrqm
     
 
