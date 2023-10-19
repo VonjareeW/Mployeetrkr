@@ -21,7 +21,6 @@
     "asciiart-logo": "^0.2.7",
     "express": "^4.18.2",
     "inquirer": "^8.2.6",
-    "mysql": "^2.18.1",
     "mysql2": "^3.6.2"
   }
 }
